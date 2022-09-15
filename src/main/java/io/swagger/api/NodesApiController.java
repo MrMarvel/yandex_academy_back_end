@@ -60,7 +60,7 @@ public class NodesApiController implements NodesApi {
             }
         }
 
-        return new ResponseEntity<SystemItem>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<SystemItem>(HttpStatus.OK);
     }
 
 }

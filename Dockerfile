@@ -4,3 +4,6 @@ WORKDIR /opt/app
 COPY ${JAR_FILE} app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
+
+# docker build . -t mrmarvel/swagger
+# docker run -d -it --name academia -p80:8080 mrmarvel/swagger
