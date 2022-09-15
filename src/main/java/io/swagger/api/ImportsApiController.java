@@ -49,9 +49,10 @@ public class ImportsApiController implements ImportsApi {
         this.request = request;
     }
 
-    public ResponseEntity<Void> importsPost(@Parameter(in = ParameterIn.DEFAULT, description = "", schema=@Schema()) @Valid @RequestBody SystemItemImportRequest body) {
+    public ResponseEntity<Void> importsPost(@Parameter(in = ParameterIn.DEFAULT, description = "",
+            schema=@Schema()) @Valid @RequestBody SystemItemImportRequest body) {
         String accept = request.getHeader("Accept");
-        return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
+        return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
 }
